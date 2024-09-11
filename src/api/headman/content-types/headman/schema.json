@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headmen",
+  "info": {
+    "singularName": "headman",
+    "pluralName": "headmen",
+    "displayName": "Headman",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": false
+    },
+    "finishDate": {
+      "required": false,
+      "type": "date"
+    }
+  }
+}
