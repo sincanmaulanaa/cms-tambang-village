@@ -951,6 +951,7 @@ export interface ApiPotentialTypePotentialType extends Schema.CollectionType {
     singularName: 'potential-type';
     pluralName: 'potential-types';
     displayName: 'potential-type';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -962,6 +963,7 @@ export interface ApiPotentialTypePotentialType extends Schema.CollectionType {
       'oneToMany',
       'api::potential.potential'
     >;
+    description: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

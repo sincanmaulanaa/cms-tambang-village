@@ -4,7 +4,8 @@
   "info": {
     "singularName": "potential-type",
     "pluralName": "potential-types",
-    "displayName": "potential-type"
+    "displayName": "potential-type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,10 @@
       "relation": "oneToMany",
       "target": "api::potential.potential",
       "mappedBy": "potential_type"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }
