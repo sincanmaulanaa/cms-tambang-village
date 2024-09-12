@@ -788,6 +788,29 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiApbdApbd extends Schema.CollectionType {
+  collectionName: 'apbds';
+  info: {
+    singularName: 'apbd';
+    pluralName: 'apbds';
+    displayName: 'APBD';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    file: Attribute.Media<'files'> & Attribute.Required;
+    year: Attribute.BigInteger & Attribute.Required & Attribute.Unique;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::apbd.apbd', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::apbd.apbd', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiArticleArticle extends Schema.CollectionType {
   collectionName: 'articles';
   info: {
@@ -886,6 +909,77 @@ export interface ApiHeadmanHeadman extends Schema.CollectionType {
   };
 }
 
+export interface ApiPotentialPotential extends Schema.CollectionType {
+  collectionName: 'potentials';
+  info: {
+    singularName: 'potential';
+    pluralName: 'potentials';
+    displayName: 'potential';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    description: Attribute.Text & Attribute.Required;
+    potential_type: Attribute.Relation<
+      'api::potential.potential',
+      'manyToOne',
+      'api::potential-type.potential-type'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::potential.potential',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::potential.potential',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPotentialTypePotentialType extends Schema.CollectionType {
+  collectionName: 'potential_types';
+  info: {
+    singularName: 'potential-type';
+    pluralName: 'potential-types';
+    displayName: 'potential-type';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    potentials: Attribute.Relation<
+      'api::potential-type.potential-type',
+      'oneToMany',
+      'api::potential.potential'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::potential-type.potential-type',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::potential-type.potential-type',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -904,9 +998,12 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::apbd.apbd': ApiApbdApbd;
       'api::article.article': ApiArticleArticle;
       'api::demography.demography': ApiDemographyDemography;
       'api::headman.headman': ApiHeadmanHeadman;
+      'api::potential.potential': ApiPotentialPotential;
+      'api::potential-type.potential-type': ApiPotentialTypePotentialType;
     }
   }
 }

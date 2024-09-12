@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "potential_types",
+  "info": {
+    "singularName": "potential-type",
+    "pluralName": "potential-types",
+    "displayName": "potential-type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "potentials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::potential.potential",
+      "mappedBy": "potential_type"
+    }
+  }
+}

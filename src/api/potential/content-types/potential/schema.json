@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "potentials",
+  "info": {
+    "singularName": "potential",
+    "pluralName": "potentials",
+    "displayName": "potential"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "potential_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::potential-type.potential-type",
+      "inversedBy": "potentials"
+    }
+  }
+}
