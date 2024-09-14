@@ -876,6 +876,37 @@ export interface ApiDemographyDemography extends Schema.SingleType {
   };
 }
 
+export interface ApiGalleryGallery extends Schema.CollectionType {
+  collectionName: 'galleries';
+  info: {
+    singularName: 'gallery';
+    pluralName: 'galleries';
+    displayName: 'gallery';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    image: Attribute.Media<'images'> & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::gallery.gallery',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::gallery.gallery',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHeadmanHeadman extends Schema.CollectionType {
   collectionName: 'headmen';
   info: {
@@ -1003,6 +1034,7 @@ declare module '@strapi/types' {
       'api::apbd.apbd': ApiApbdApbd;
       'api::article.article': ApiArticleArticle;
       'api::demography.demography': ApiDemographyDemography;
+      'api::gallery.gallery': ApiGalleryGallery;
       'api::headman.headman': ApiHeadmanHeadman;
       'api::potential.potential': ApiPotentialPotential;
       'api::potential-type.potential-type': ApiPotentialTypePotentialType;
