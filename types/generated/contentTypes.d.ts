@@ -907,6 +907,36 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
   };
 }
 
+export interface ApiGovernmentGovernment extends Schema.SingleType {
+  collectionName: 'governments';
+  info: {
+    singularName: 'government';
+    pluralName: 'governments';
+    displayName: 'Government';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    organization: Attribute.Media<'files'> & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::government.government',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::government.government',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHeadmanHeadman extends Schema.CollectionType {
   collectionName: 'headmen';
   info: {
@@ -1035,6 +1065,7 @@ declare module '@strapi/types' {
       'api::article.article': ApiArticleArticle;
       'api::demography.demography': ApiDemographyDemography;
       'api::gallery.gallery': ApiGalleryGallery;
+      'api::government.government': ApiGovernmentGovernment;
       'api::headman.headman': ApiHeadmanHeadman;
       'api::potential.potential': ApiPotentialPotential;
       'api::potential-type.potential-type': ApiPotentialTypePotentialType;

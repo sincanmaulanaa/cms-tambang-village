@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "governments",
+  "info": {
+    "singularName": "government",
+    "pluralName": "governments",
+    "displayName": "Government"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "organization": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
