@@ -1,0 +1,936 @@
+{
+	"version": 2,
+	"data": {
+		"admin::permission": {},
+		"admin::role": {},
+		"admin::workflow": {},
+		"admin::workflow-stage": {},
+		"api::potential-type.potential-type": {
+			"1": {
+				"id": 1,
+				"name": "Peternakan",
+				"createdAt": "2024-09-12T12:46:41.036Z",
+				"updatedAt": "2024-09-12T13:24:47.888Z",
+				"publishedAt": "2024-09-12T12:47:07.971Z",
+				"description": "Peternakan adalah mengembangbiakkan dan memelihara hewan untuk menghasilkan hasil. Sapi, ayam, kambing, domba, dan babi adalah hewan yang banyak diternakkan. Hasil peternakan termasuk daging, susu, telur, dan bahan pakaian. Berikut adalah jenis peternakan yang berada di Desa Tambang:",
+				"potentials": [
+					1,
+					2
+				],
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"2": {
+				"id": 2,
+				"name": "Pertanian",
+				"createdAt": "2024-09-12T12:46:53.965Z",
+				"updatedAt": "2024-09-12T13:24:27.112Z",
+				"publishedAt": "2024-09-12T12:47:07.971Z",
+				"description": "Pertanian adalah kegiatan pemanfaatan sumber daya hayati oleh manusia untuk menghasilkan makanan, bahan baku industri, atau energi, serta untuk mengelola lingkungan hidupnya. Berikut adalah pertanian yang berada di Desa Tambang:",
+				"potentials": [
+					3,
+					4,
+					5,
+					6,
+					7
+				],
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"api::potential.potential": {
+			"1": {
+				"id": 1,
+				"name": "Sapi Perah",
+				"description": "Sapi perah adalah sapi yang dikembangbiakkan karena kemampuan mereka untuk menghasilkan banyak susu.",
+				"createdAt": "2024-09-12T12:48:08.560Z",
+				"updatedAt": "2024-09-12T12:48:08.560Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 1,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"2": {
+				"id": 2,
+				"name": "Sapi Potong",
+				"description": "Sapi potong adalah jenis sapi yang diternakkan untuk dimanfaatkan dagingnya. Biasanya terdapat tiga tahapan utama dalam produksi daging sapi, yaitu tahap pengasuhan, penggembalaan dan pemberian pakan.",
+				"createdAt": "2024-09-12T12:48:46.379Z",
+				"updatedAt": "2024-09-12T12:48:46.379Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 1,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"3": {
+				"id": 3,
+				"name": "Rumput Gajah",
+				"description": "Rumput Gajah",
+				"createdAt": "2024-09-12T12:49:55.252Z",
+				"updatedAt": "2024-09-12T12:49:55.252Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 2,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"4": {
+				"id": 4,
+				"name": "Porang",
+				"description": "Porang",
+				"createdAt": "2024-09-12T12:50:13.063Z",
+				"updatedAt": "2024-09-12T12:50:13.063Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 2,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"5": {
+				"id": 5,
+				"name": "Jagung Pakan",
+				"description": "Jagung Pakan",
+				"createdAt": "2024-09-12T12:50:36.162Z",
+				"updatedAt": "2024-09-12T12:50:36.162Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 2,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"6": {
+				"id": 6,
+				"name": "Singkong",
+				"description": "Singkong",
+				"createdAt": "2024-09-12T12:50:56.238Z",
+				"updatedAt": "2024-09-12T12:50:56.238Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 2,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"7": {
+				"id": 7,
+				"name": "Daun Bawang",
+				"description": "Daun Bawang",
+				"createdAt": "2024-09-12T12:51:14.974Z",
+				"updatedAt": "2024-09-20T00:08:14.213Z",
+				"publishedAt": "2024-09-12T12:51:37.861Z",
+				"potential_type": 2,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"api::headman.headman": {
+			"2": {
+				"id": 2,
+				"fullname": "Muhammad Anom",
+				"startDate": null,
+				"finishDate": null,
+				"createdAt": "2024-09-11T15:20:29.076Z",
+				"updatedAt": "2024-09-11T19:55:51.363Z",
+				"publishedAt": "2024-09-11T15:26:26.165Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"3": {
+				"id": 3,
+				"fullname": "Saijayo",
+				"startDate": null,
+				"finishDate": null,
+				"createdAt": "2024-09-11T15:20:48.154Z",
+				"updatedAt": "2024-09-11T19:55:51.461Z",
+				"publishedAt": "2024-09-11T15:26:06.695Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"4": {
+				"id": 4,
+				"fullname": "Donokromo",
+				"startDate": null,
+				"finishDate": null,
+				"createdAt": "2024-09-11T15:21:07.024Z",
+				"updatedAt": "2024-09-11T19:55:51.493Z",
+				"publishedAt": "2024-09-11T15:26:38.396Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"5": {
+				"id": 5,
+				"fullname": "Kodrono",
+				"startDate": null,
+				"finishDate": null,
+				"createdAt": "2024-09-11T15:21:18.122Z",
+				"updatedAt": "2024-09-11T19:55:51.520Z",
+				"publishedAt": "2024-09-11T15:26:34.697Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"6": {
+				"id": 6,
+				"fullname": "Pasiun",
+				"startDate": null,
+				"finishDate": null,
+				"createdAt": "2024-09-11T15:21:27.673Z",
+				"updatedAt": "2024-09-11T19:55:51.572Z",
+				"publishedAt": "2024-09-11T15:26:21.685Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"7": {
+				"id": 7,
+				"fullname": "Mariman",
+				"startDate": "1917-09-11",
+				"finishDate": "1935-09-11",
+				"createdAt": "2024-09-11T15:21:35.536Z",
+				"updatedAt": "2024-09-11T19:55:51.665Z",
+				"publishedAt": "2024-09-11T15:26:30.632Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"8": {
+				"id": 8,
+				"fullname": "Yadi Rekso Sumarto",
+				"startDate": "1936-09-11",
+				"finishDate": "1957-09-11",
+				"createdAt": "2024-09-11T15:22:26.801Z",
+				"updatedAt": "2024-09-11T19:55:51.712Z",
+				"publishedAt": "2024-09-11T15:25:51.213Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"9": {
+				"id": 9,
+				"fullname": "Suradi",
+				"startDate": "1990-09-11",
+				"finishDate": "1998-09-11",
+				"createdAt": "2024-09-11T15:23:51.646Z",
+				"updatedAt": "2024-09-11T19:55:51.797Z",
+				"publishedAt": "2024-09-11T15:25:57.893Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"10": {
+				"id": 10,
+				"fullname": "Tumiran",
+				"startDate": "1998-09-11",
+				"finishDate": "2006-09-11",
+				"createdAt": "2024-09-11T15:24:49.757Z",
+				"updatedAt": "2024-09-11T19:55:51.818Z",
+				"publishedAt": "2024-09-11T15:25:44.539Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"11": {
+				"id": 11,
+				"fullname": "Fadilatin",
+				"startDate": "2007-09-11",
+				"finishDate": "2013-09-11",
+				"createdAt": "2024-09-11T15:25:18.613Z",
+				"updatedAt": "2024-09-11T19:55:51.869Z",
+				"publishedAt": "2024-09-11T15:25:30.740Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"12": {
+				"id": 12,
+				"fullname": "Maryono",
+				"startDate": "2013-09-11",
+				"finishDate": "2019-09-11",
+				"createdAt": "2024-09-11T15:27:47.144Z",
+				"updatedAt": "2024-09-11T19:55:51.899Z",
+				"publishedAt": "2024-09-11T15:27:48.683Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"13": {
+				"id": 13,
+				"fullname": "Tugiono",
+				"startDate": "2019-09-11",
+				"finishDate": "2027-09-11",
+				"createdAt": "2024-09-11T15:30:54.621Z",
+				"updatedAt": "2024-09-20T03:47:00.899Z",
+				"publishedAt": "2024-09-11T15:30:55.602Z",
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"plugin::upload.folder": {
+			"1": {
+				"id": 1,
+				"name": "Galleries",
+				"pathId": 1,
+				"path": "/1",
+				"createdAt": "2024-09-14T05:55:58.915Z",
+				"updatedAt": "2024-09-14T05:55:58.915Z",
+				"parent": null,
+				"children": [],
+				"files": [
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					13
+				],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"plugin::upload.file": {
+			"3": {
+				"id": 3,
+				"name": "apb 2023 tambang.pdf",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "apb_2023_tambang_b1791eda12",
+				"ext": ".pdf",
+				"mime": "application/pdf",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/apb_2023_tambang_b1791eda12.pdf",
+				"createdAt": "2024-09-12T12:45:33.877Z",
+				"updatedAt": "2024-09-12T12:45:33.877Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"4": {
+				"id": 4,
+				"name": "WhatsApp Image 2024-09-11 at 12.17.18.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_11_at_12_17_18_87053fed8d",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_11_at_12_17_18_87053fed8d.jpeg",
+				"createdAt": "2024-09-14T05:58:39.702Z",
+				"updatedAt": "2024-09-14T05:58:39.702Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"5": {
+				"id": 5,
+				"name": "WhatsApp Image 2024-09-14 at 12.57.25.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_14_at_12_57_25_d3415f8c86",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_14_at_12_57_25_d3415f8c86.jpeg",
+				"createdAt": "2024-09-14T05:58:42.231Z",
+				"updatedAt": "2024-09-14T05:58:42.231Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"6": {
+				"id": 6,
+				"name": "WhatsApp Image 2024-09-14 at 12.57.32.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_14_at_12_57_32_c5f9a8ebde",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_14_at_12_57_32_c5f9a8ebde.jpeg",
+				"createdAt": "2024-09-14T05:58:42.506Z",
+				"updatedAt": "2024-09-14T05:58:42.506Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"7": {
+				"id": 7,
+				"name": "bersih-bersih-masjid.jpeg",
+				"alternativeText": "",
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_14_at_12_57_26_1_ad6042e376",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_14_at_12_57_26_1_ad6042e376.jpeg",
+				"createdAt": "2024-09-14T05:58:42.514Z",
+				"updatedAt": "2024-09-14T06:01:13.341Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"8": {
+				"id": 8,
+				"name": "WhatsApp Image 2024-09-14 at 12.57.26.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_14_at_12_57_26_0a3a0b0ecc",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_14_at_12_57_26_0a3a0b0ecc.jpeg",
+				"createdAt": "2024-09-14T05:58:42.594Z",
+				"updatedAt": "2024-09-14T05:58:42.594Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"9": {
+				"id": 9,
+				"name": "WhatsApp Image 2024-09-14 at 12.57.27.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_14_at_12_57_27_07213e6391",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_14_at_12_57_27_07213e6391.jpeg",
+				"createdAt": "2024-09-14T05:58:44.802Z",
+				"updatedAt": "2024-09-14T05:58:44.802Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"10": {
+				"id": 10,
+				"name": "WhatsApp Image 2024-09-11 at 11.46.14.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_11_at_11_46_14_100ce983de",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_11_at_11_46_14_100ce983de.jpeg",
+				"createdAt": "2024-09-14T05:58:49.117Z",
+				"updatedAt": "2024-09-14T06:08:02.729Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"11": {
+				"id": 11,
+				"name": "WhatsApp Image 2024-09-11 at 11.45.27.jpeg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "Whats_App_Image_2024_09_11_at_11_45_27_4cfc3f2356",
+				"ext": ".jpeg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/Whats_App_Image_2024_09_11_at_11_45_27_4cfc3f2356.jpeg",
+				"createdAt": "2024-09-14T05:58:50.482Z",
+				"updatedAt": "2024-09-14T06:06:11.010Z",
+				"createdBy": 1,
+				"updatedBy": 1
+			},
+			"13": {
+				"id": 13,
+				"name": "plang.jpg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "plang_5e2e775af8",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/plang_5e2e775af8.jpg",
+				"createdAt": "2024-09-15T15:03:29.090Z",
+				"updatedAt": "2024-09-15T15:03:29.090Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"15": {
+				"id": 15,
+				"name": "APBDesa_Tambang_2024.pdf",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "APB_Desa_Tambang_2024_16ee42c184",
+				"ext": ".pdf",
+				"mime": "application/pdf",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/APB_Desa_Tambang_2024_16ee42c184.pdf",
+				"createdAt": "2024-09-18T07:51:18.802Z",
+				"updatedAt": "2024-09-18T13:23:02.972Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"17": {
+				"id": 17,
+				"name": "pembukaan kkn.jpg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "pembukaan_kkn_6077d3c037",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/pembukaan_kkn_6077d3c037.jpg",
+				"createdAt": "2024-09-18T14:56:02.301Z",
+				"updatedAt": "2024-09-18T14:56:02.301Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"18": {
+				"id": 18,
+				"name": "maulid nabi.jpg",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "maulid_nabi_6b24b26e1e",
+				"ext": ".jpg",
+				"mime": "image/jpeg",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/maulid_nabi_6b24b26e1e.jpg",
+				"createdAt": "2024-09-19T23:45:56.921Z",
+				"updatedAt": "2024-09-19T23:45:56.921Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"24": {
+				"id": 24,
+				"name": "SUSUNAN ORGANISASI DAN TATA KERJA PEMERINTAHAN DESA TAMBANG KECAMATAN PUDAK KABUPATEN PONOROGO.pdf",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "SUSUNAN_ORGANISASI_DAN_TATA_KERJA_PEMERINTAHAN_DESA_TAMBANG_KECAMATAN_PUDAK_KABUPATEN_PONOROGO_9d70ca7fff",
+				"ext": ".pdf",
+				"mime": "application/pdf",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/SUSUNAN_ORGANISASI_DAN_TATA_KERJA_PEMERINTAHAN_DESA_TAMBANG_KECAMATAN_PUDAK_KABUPATEN_PONOROGO_9d70ca7fff.pdf",
+				"createdAt": "2024-09-20T03:25:15.127Z",
+				"updatedAt": "2024-09-20T03:25:15.127Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"27": {
+				"id": 27,
+				"name": "DEMOGRAFI_DS_TAMBANG.pdf",
+				"alternativeText": null,
+				"caption": null,
+				"hash": "DEMOGRAFI_DS_TAMBANG_6b13e7f73e",
+				"ext": ".pdf",
+				"mime": "application/pdf",
+				"url": "https://dynamic-friend-d13f26bcc2.media.strapiapp.com/DEMOGRAFI_DS_TAMBANG_6b13e7f73e.pdf",
+				"createdAt": "2024-09-20T03:29:40.766Z",
+				"updatedAt": "2024-09-20T03:29:40.766Z",
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::government.government": {
+			"1": {
+				"id": 1,
+				"createdAt": "2024-09-17T15:08:08.320Z",
+				"updatedAt": "2024-09-20T03:25:21.315Z",
+				"publishedAt": "2024-09-17T15:08:11.097Z",
+				"organization": 24,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"api::gallery.gallery": {
+			"1": {
+				"id": 1,
+				"title": "Pembukaan Kuliah Kerja Nyata (KKN) Tematik Fakultas Teknik UMPO",
+				"createdAt": "2024-09-14T06:00:03.600Z",
+				"updatedAt": "2024-09-14T06:00:07.300Z",
+				"publishedAt": "2024-09-14T06:00:07.284Z",
+				"image": 6,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"2": {
+				"id": 2,
+				"title": "Bersih masjid (Masjid Musfir al Muthairy wawalidaihi Ponorogo مسجد مسفر سفر المطيري ووالديه)",
+				"createdAt": "2024-09-14T06:01:41.162Z",
+				"updatedAt": "2024-09-14T06:01:45.193Z",
+				"publishedAt": "2024-09-14T06:01:45.183Z",
+				"image": 7,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"3": {
+				"id": 3,
+				"title": "Kerja bakti memindahkan pasir hurug untuk mengantisipasi tanggul yang jebol",
+				"createdAt": "2024-09-14T06:02:35.499Z",
+				"updatedAt": "2024-09-14T06:02:59.056Z",
+				"publishedAt": "2024-09-14T06:02:39.628Z",
+				"image": 9,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"4": {
+				"id": 4,
+				"title": "Bersih masjid (Masjid Al Fattah Tambang)",
+				"createdAt": "2024-09-14T06:03:50.712Z",
+				"updatedAt": "2024-09-14T06:03:54.895Z",
+				"publishedAt": "2024-09-14T06:03:54.890Z",
+				"image": 8,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"5": {
+				"id": 5,
+				"title": "Mengajar siswa SDN Tambang tentang Pengenalan Komputer dan Word",
+				"createdAt": "2024-09-14T06:04:20.911Z",
+				"updatedAt": "2024-09-14T06:04:29.538Z",
+				"publishedAt": "2024-09-14T06:04:29.531Z",
+				"image": 5,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"6": {
+				"id": 6,
+				"title": "Proses pembuatan tong sampah diperuntuhkan untuk warga Tambang terutama di balai desa dan pos kampling dukuh Tumpak Rejo",
+				"createdAt": "2024-09-14T06:06:16.914Z",
+				"updatedAt": "2024-09-14T06:06:24.516Z",
+				"publishedAt": "2024-09-14T06:06:24.499Z",
+				"image": 11,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"7": {
+				"id": 7,
+				"title": "Nonton bareng bersama siswa Madrasah Diniyah Desa Tambang tentang kisah Nabi",
+				"createdAt": "2024-09-14T06:08:12.472Z",
+				"updatedAt": "2024-09-14T06:08:22.414Z",
+				"publishedAt": "2024-09-14T06:08:22.403Z",
+				"image": 10,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"8": {
+				"id": 8,
+				"title": "Kerja bakti membuat pagar darurat bersama warga Desa Tambang",
+				"createdAt": "2024-09-14T06:09:03.390Z",
+				"updatedAt": "2024-09-14T06:09:08.489Z",
+				"publishedAt": "2024-09-14T06:09:08.483Z",
+				"image": 4,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"api::demography.demography": {
+			"1": {
+				"id": 1,
+				"createdAt": "2024-09-11T15:32:42.846Z",
+				"updatedAt": "2024-09-20T03:29:46.122Z",
+				"publishedAt": "2024-09-11T15:32:44.135Z",
+				"file": 27,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"api::article.article": {
+			"3": {
+				"id": 3,
+				"title": "Pemasangan Plang Papan Nama Ketua Dusun dan Sekretaris Desa Tambang oleh Kelompok 9 dan 10 KKN 2024",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Pada hari 15 september 2024, kelompok 9 dan 10 KKN Universitas [nama universitas] melakukan pemasangan plang papan nama untuk Ketua Dusun dan Sekretaris Desa Tambang, Kecamatan Pudak. Kegiatan ini merupakan salah satu program kerja yang bertujuan mempermudah warga desa dan pihak luar untuk mengenali rumah para perangkat desa.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Pemasangan plang papan nama dilaksanakan di dua lokasi utama, yaitu di rumah Ketua Dusun dan Sekretaris Desa. Setiap plang memuat informasi jelas dan mudah dibaca tentang nama dan jabatan perangkat desa yang bersangkutan. Hal ini penting agar warga yang membutuhkan informasi atau bantuan dapat langsung mengunjungi rumah pejabat desa yang sesuai.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Kegiatan pemasangan ini tidak hanya dilakukan untuk memperindah tata ruang desa, tetapi juga sebagai bentuk transparansi informasi bagi masyarakat. Dengan adanya papan nama ini, warga Desa Tambang kini lebih mudah mengetahui lokasi rumah perangkat desa yang memiliki tanggung jawab dalam pelayanan publik.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Sebelum pemasangan, kelompok KKN telah berkoordinasi dengan perangkat desa untuk menentukan desain dan lokasi pemasangan plang. Dengan keterlibatan perangkat desa, kami memastikan bahwa plang papan nama tersebut diletakkan di tempat strategis yang mudah dilihat oleh masyarakat sekitar.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Kegiatan ini berjalan dengan lancar, berkat kerja sama yang baik antara kelompok KKN dan masyarakat setempat. Setelah plang dipasang, perangkat desa menyampaikan apresiasi atas inisiatif ini, karena sangat membantu mempermudah akses masyarakat dalam mendapatkan pelayanan yang dibutuhkan.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Sebagai rencana tindak lanjut, kelompok KKN akan berkoordinasi dengan perangkat desa untuk memperluas pemasangan plang papan nama ke beberapa lokasi penting lainnya di desa, seperti kantor desa dan tempat-tempat pelayanan publik lainnya.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Melalui kegiatan ini, diharapkan masyarakat Desa Tambang dapat lebih terlayani dengan baik, dan program-program desa dapat berjalan lebih efektif dan efisien berkat informasi yang lebih mudah diakses.",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"createdAt": "2024-09-15T15:04:07.116Z",
+				"updatedAt": "2024-09-15T15:07:02.915Z",
+				"publishedAt": "2024-09-15T15:07:02.896Z",
+				"image": 13,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"4": {
+				"id": 4,
+				"title": "KKN Tematik UMPO 2024 di Desa Tambang Resmi Dibuka dengan Beragam Program Inovatif",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Kegiatan Kuliah Kerja Nyata (KKN) Tematik Universitas Muhammadiyah Ponorogo (UMPO) resmi dimulai di Desa Tambang pada 26 Agustus 2024. Dengan tema \"Menginspirasi Masyarakat Melalui Teknologi\", program ini diikuti oleh 28 mahasiswa yang bertugas di Desa Tambang, bagian dari total 166 mahasiswa yang tersebar di Kecamatan Pudak. Pembukaan acara dilakukan oleh Kepala Desa Tambang, Bapak Tugiono, yang diwakili oleh Kamituwo, Bapak Narto. Mahasiswa KKN dipimpin oleh Rangga Ardana selaku koordinator, yang memaparkan berbagai program kerja yang akan dilaksanakan selama kegiatan berlangsung.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Salah satu program unggulan KKN ini adalah pengadaan mesin pengolah jahe untuk meningkatkan produksi UMKM lokal. Selain itu, mahasiswa KKN juga menyediakan mesin pencacah pakan ternak yang bertujuan membantu kelompok peternak dalam meningkatkan efisiensi pembuatan pakan ternak. Program lain yang turut digagas adalah pemasangan tempat sampah di area Balai Desa dan Pos Kamling untuk mendukung program kebersihan lingkungan desa.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Dalam rangka memanfaatkan teknologi informasi, mahasiswa KKN juga melakukan pemasangan papan informasi digital (running text) di kantor Desa Tambang, untuk memudahkan penyampaian informasi penting kepada warga desa. Selain itu, pembuatan plang nama perangkat desa dilakukan untuk meningkatkan pelayanan publik dan memudahkan warga mengenal perangkat desa. Lebih lanjut, mahasiswa KKN mengembangkan website sistem informasi desa, yang memungkinkan warga mendapatkan akses lebih mudah terhadap informasi dan layanan desa secara daring.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Di bidang pendidikan, mahasiswa KKN turut mengembangkan website sistem informasi sekolah, yang bertujuan untuk menyediakan informasi akademik dan kegiatan sekolah secara daring. Selain itu, mereka juga memberikan pelatihan komputer dan Microsoft Word kepada siswa SD di Desa Tambang, guna memperkenalkan teknologi dan literasi digital sejak dini. Mahasiswa KKN juga menyelenggarakan program Madrasah Diniyah (MADIN) yang mencakup kegiatan nonton bareng kisah Nabi dan literasi digital untuk anak-anak dan remaja di desa.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Tidak hanya itu, mahasiswa KKN juga berperan dalam pelaksanaan Program Jumat Bersih, di mana kegiatan gotong-royong membersihkan Masjid dan lingkungan sekitarnya dilakukan setiap hari Jumat. Sementara itu, di sektor kesehatan, mahasiswa KKN mendukung Posyandu Lansia dan Balita, melalui program pemeriksaan kesehatan rutin bagi lansia dan balita di desa untuk menjaga kesehatan kelompok masyarakat yang rentan.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Dengan beragam program yang telah dirancang, KKN Tematik UMPO 2024 di Desa Tambang diharapkan mampu memberikan dampak positif dan berkelanjutan bagi masyarakat setempat, terutama dalam hal pemanfaatan teknologi untuk meningkatkan kualitas hidup.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"createdAt": "2024-09-18T14:56:20.198Z",
+				"updatedAt": "2024-09-18T14:56:25.578Z",
+				"publishedAt": "2024-09-18T14:56:25.485Z",
+				"image": 17,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"5": {
+				"id": 5,
+				"title": "Perayaan Maulid Nabi Muhammad SAW di Desa Tambang: Sambutan Khidmat dan Kebersamaan yang Menginspirasi",
+				"description": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Desa Tambang – Pada malam tanggal 14 Agustus 2024, Desa Tambang menyelenggarakan perayaan Maulid Nabi Muhammad SAW yang penuh semangat dan khidmat. Acara yang dimulai pada pukul 20.00 WIB ini diprakarsai oleh Karang Taruna Muda Desa Tambang, dengan rangkaian kegiatan yang dirancang untuk memperingati kelahiran Nabi Muhammad SAW serta mempererat hubungan antarwarga desa.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Perayaan dimulai dengan penampilan Hadroh Putri, yang menghibur hadirin dengan lantunan musik religi yang mendalam dan menyentuh. Suasana khusyuk dan penuh kekhusyukan menyelimuti lokasi acara, mengantar para peserta dalam suasana spiritual yang mempersiapkan mereka untuk rangkaian acara berikutnya.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Sambutan pertama disampaikan oleh Bapak Lurah Tugiono, Kepala Desa Tambang, yang membuka acara dengan kata-kata penuh harapan. Beliau menekankan pentingnya memperingati Maulid Nabi sebagai momen untuk meneladani akhlak Nabi Muhammad SAW dalam kehidupan sehari-hari. Bapak Lurah Tugiono juga mengungkapkan rasa syukurnya atas partisipasi aktif warga desa dalam acara ini, serta berharap agar semangat kebersamaan yang ditunjukkan malam itu dapat terus diperkuat dalam berbagai aspek kehidupan masyarakat.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Sambutan kedua disampaikan oleh Kepala Takmir Masjid Desa Tambang, yang memberikan apresiasi atas inisiatif Karang Taruna Muda dalam menyelenggarakan acara ini. Kepala Takmir menekankan betapa pentingnya menjaga tradisi keagamaan dan mempererat silaturahmi di antara umat. Beliau berharap bahwa perayaan ini dapat menjadi momentum untuk memperkuat iman dan meningkatkan kepedulian sosial di tengah masyarakat.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Selanjutnya, beberapa tokoh masyarakat juga memberikan sambutan, menyampaikan ucapan terima kasih kepada Karang Taruna Muda dan semua pihak yang telah berkontribusi dalam acara ini. Mereka menyoroti betapa pentingnya menjaga keharmonisan dan kebersamaan di desa, serta mengingatkan bahwa Maulid Nabi adalah kesempatan untuk mengingat kembali ajaran-ajaran Nabi Muhammad SAW yang penuh kebaikan dan kasih sayang.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Momen spesial dalam acara ini adalah pemotongan tumpeng, yang dilakukan oleh Bapak Lurah Tugiono bersama beberapa tokoh masyarakat. Pemotongan tumpeng, sebagai simbol syukur dan kebersamaan, menandai puncak dari rangkaian kegiatan. Warga desa kemudian berkumpul untuk makan bersama, menikmati hidangan tradisional dalam suasana akrab dan penuh kehangatan.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Acara ditutup dengan penampilan Hadroh Putra, yang menambah suasana perayaan dengan lantunan musik religi yang meriah dan menyentuh. Penampilan ini menutup perayaan dengan penuh warna, meninggalkan kesan mendalam bagi seluruh hadirin.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Perayaan Maulid Nabi Muhammad SAW di Desa Tambang kali ini menjadi bukti nyata dari semangat kebersamaan dan kehangatan komunitas. Karang Taruna Muda Desa Tambang patut diacungi jempol atas dedikasi mereka dalam menyelenggarakan acara ini dengan penuh perhatian dan kreativitas. Acara ini tidak hanya memperingati kelahiran Nabi Muhammad SAW tetapi juga memperkuat rasa komunitas, menjadikan Desa Tambang sebagai contoh desa yang harmonis dan penuh kasih sayang.",
+								"type": "text"
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": true,
+								"text": "",
+								"type": "text"
+							}
+						]
+					}
+				],
+				"createdAt": "2024-09-19T23:01:22.933Z",
+				"updatedAt": "2024-09-19T23:46:20.178Z",
+				"publishedAt": "2024-09-19T23:01:52.379Z",
+				"image": 18,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		},
+		"api::apbd.apbd": {
+			"1": {
+				"id": 1,
+				"year": "2023",
+				"createdAt": "2024-09-12T12:46:01.433Z",
+				"updatedAt": "2024-09-12T12:46:06.762Z",
+				"publishedAt": "2024-09-12T12:46:06.753Z",
+				"file": 3,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			},
+			"2": {
+				"id": 2,
+				"year": "2024",
+				"createdAt": "2024-09-18T07:51:41.758Z",
+				"updatedAt": "2024-09-18T07:51:48.683Z",
+				"publishedAt": "2024-09-18T07:51:48.675Z",
+				"file": 15,
+				"strapi_stage": null,
+				"createdBy": null,
+				"updatedBy": null,
+				"strapi_assignee": null
+			}
+		}
+	}
+}
