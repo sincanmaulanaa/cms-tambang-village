@@ -15,7 +15,15 @@ module.exports = ({ env }) => ({
         api_secret: env("CLOUDINARY_SECRET"),
       },
       actionOptions: {
-        upload: {},
+        upload: {
+          resource_type: (file) => {
+            // Check the file extension and set the resource_type accordingly
+            if (file.ext === ".pdf") {
+              return "raw"; // Treat PDFs as raw files
+            }
+            return "auto"; // Use the default behavior for other file types
+          },
+        },
         uploadStream: {},
         delete: {},
       },
