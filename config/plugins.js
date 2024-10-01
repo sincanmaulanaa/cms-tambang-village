@@ -1,4 +1,11 @@
 module.exports = ({ env }) => ({
+  //...
+  "import-export-entries": {
+    enabled: true,
+    config: {
+      // See `Config` section.
+    },
+  },
   upload: {
     config: {
       provider: "cloudinary",
@@ -10,10 +17,11 @@ module.exports = ({ env }) => ({
       actionOptions: {
         upload: {},
         uploadStream: {
-          resource_type: "raw", // Ensure all non-image uploads use the 'raw' resource type
+          folder: env("CLOUDINARY_FOLDER"),
         },
         delete: {},
       },
     },
   },
+  //...
 });
